@@ -121,7 +121,7 @@ body {
 }
 
 .featured-content {
-  height: 50vh;
+  height: -50vh;
   padding: 50px;
 }
 
