@@ -3,7 +3,7 @@
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 .navbar {
@@ -20,7 +20,7 @@ body {
   padding: 0 50px;
   height: 100%;
   color: white;
-  font-family: "Sen", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 .logo-container {
