@@ -1,7 +1,7 @@
 # Latino Series / Latino Flix
 
-<!-- Añadir preview: guarda la imagen en img/preview.png o img/preview.webp -->
-[![Vista previa de LatinoSeries](img/preview.png)](img/preview.png)
+<!-- Replace relative path with exact raw GitHub URL to ensure preview renders -->
+[![Vista previa de LatinoSeries](https://raw.githubusercontent.com/DHerrera85/Latino-Flix/main/img/preview.png)](https://raw.githubusercontent.com/DHerrera85/Latino-Flix/main/img/preview.png)
 
 Pequeña web de catálogo de series con carruseles y navegación responsive.
 
