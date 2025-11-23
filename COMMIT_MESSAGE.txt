@@ -1,3 +1,8 @@
+chore: cache-bust CSS to force GH Pages reload
+
+- Add query string to style.css to bypass CDN/browser cache after deploy.
+- This helps ensure updated styles (arrows, footer, etc.) appear on GitHub Pages.
+
 Featured slider refactor, gallery arrows & swipe, anchors and footer
 
 - Refactor featured slider: single visible slide, per-slide backgrounds, touch/mouse drag with snap and indicators.

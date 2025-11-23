@@ -1,19 +1,8 @@
-# ...run these commands in PowerShell / Git Bash from project root...
+# Usage: edit BRANCH below if needed, then run: bash git-commands.sh
 
-# 1) Ver estado
+BRANCH="main"  # <- cambia a 'gh-pages' u otra rama si tu GH Pages publica desde ahí
+
 git status
-
-# 2) Añadir archivos modificados
-git add .
-
-# 3) Commit usando el archivo de mensaje (si lo guardaste)
-git commit -F "COMMIT_MESSAGE.txt"
-
-# Si prefieres usar -m directamente:
-# git commit -m "Featured slider refactor, gallery arrows & swipe, anchors and footer"
-
-# 4) Empujar al remoto (ajusta 'origin' y 'main' si usas otra rama)
-git push origin HEAD
-
-# 5) Verifica el push
-git status
+git add index.html COMMIT_MESSAGE.txt
+git commit -F COMMIT_MESSAGE.txt
+git push origin "$BRANCH"
