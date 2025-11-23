@@ -1,7 +1,7 @@
 # Latino Series / Latino Flix
 
 <!-- Replace relative path with exact raw GitHub URL to ensure preview renders -->
-[![Vista previa de LatinoSeries](https://raw.githubusercontent.com/DHerrera85/Latino-Flix/main/img/preview.png)](https://raw.githubusercontent.com/DHerrera85/Latino-Flix/main/img/preview.png)
+[![Vista previa de LatinoSeries](https://DHerrera85.github.io/Latino-Flix/img/preview.png)
 
 Pequeña web de catálogo de series con carruseles y navegación responsive.
 
