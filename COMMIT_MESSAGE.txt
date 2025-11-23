@@ -1,0 +1,9 @@
+Featured slider refactor, gallery arrows & swipe, anchors and footer
+
+- Refactor featured slider: single visible slide, per-slide backgrounds, touch/mouse drag with snap and indicators.
+- Swap featured slide structure to use data-bg and inline images for titles.
+- Added unified arrow controls: only one pair for featured; reduced arrow sizes.
+- Implemented per-row arrows (.row-btn) for all movie-list rows and added drag/swipe with page-snap behavior.
+- Added anchor ids for main sections and smooth scrolling with offset to avoid navbar overlap.
+- Added responsive CSS fixes (box-sizing, padding, mobile adjustments) and footer markup.
+- Small UX fixes: menu toggle closes/opens, scroll behavior improvements.

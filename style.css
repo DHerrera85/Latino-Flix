@@ -89,17 +89,6 @@ body {
   border: none;
 }
 
-/* SIDEBAR */
-.sidebar {
-  width: 50px;
-  height: 100%;
-  background: black;
-  position: fixed;
-  left: 0;
-  top: 0;
-  pointer-events: none;
-}
-
 /* FEATURED SLIDER */
 .featured-slider-container {
   width: 100%;
@@ -176,7 +165,7 @@ body {
 }
 
 
-/* Botones slide */
+/* Botones slide (featured) - tamaño reducido */
 .slider-btn {
   position: absolute;
   top: 50%;
@@ -184,10 +173,16 @@ body {
   background: rgba(0,0,0,0.6);
   border: none;
   color: white;
-  font-size: 2rem;
-  padding: 10px 18px;
+  font-size: 1.4rem;      /* reducido */
+  padding: 8px 12px;      /* reducido */
   cursor: pointer;
-  z-index: 100;
+  z-index: 400; /* más alto para que no queden cubiertas */
+  width: 40px;
+  height: 40px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .slider-btn-prev {
@@ -225,6 +220,17 @@ body {
 .movie-list-container,
 .projects-section {
   padding: 20px 70px;
+}
+
+/* Smooth anchor navigation and offset for fixed navbar */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Ensure anchored sections are visible below the fixed navbar */
+.movie-list-container,
+.projects-section {
+  scroll-margin-top: calc(var(--navbar-height) + 12px);
 }
 
 .movie-list-title {
@@ -270,6 +276,41 @@ body {
 .movie-list-item-desc {
   font-size: 0.9rem;
   color: #ccc;
+}
+
+/* Flechas para las galerías (row) - tamaño reducido */
+.row-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.6);
+  border: none;
+  color: white;
+  font-size: 1.2rem;      /* reducido */
+  padding: 6px 10px;
+  cursor: pointer;
+  z-index: 150;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 44px;           /* reducido */
+  width: 36px;            /* reducido */
+  border-radius: 6px;
+}
+
+/* ajustar separación lateral para que no queden pegadas al borde */
+.row-btn-prev { left: 8px; }
+.row-btn-next { right: 8px; }
+
+/* en pantallas pequeñas reducir tamaño y mover un poco dentro */
+@media (max-width: 600px) {
+  .row-btn {
+    height: 44px;
+    width: 36px;
+    font-size: 1.4rem;
+  }
+  .row-btn-prev { left: 4px; }
+  .row-btn-next { right: 4px; }
 }
 
 /* RESPONSIVE */
@@ -324,4 +365,72 @@ body {
   .movie-list-item-img {
     height: 140px;
   }
+}
+
+/* Asegura que cada fila sea contenedor posicionado para que los botones se ubiquen correctamente */
+.carousel-row {
+  position: relative; /* permite posicionar .row-btn dentro de la fila */
+}
+
+/* Forzar ocultar cualquier botón de fila que, por error, esté dentro del featured */
+.featured-slider-container .row-btn {
+  display: none !important;
+  pointer-events: none;
+}
+
+/* Asegurar que las flechas del featured estén siempre por encima y visibles */
+.slider-btn {
+  z-index: 400; /* más alto para que no queden cubiertas */
+  /* ...el resto de propiedades existentes... */
+}
+
+/* Forzar visibilidad de las flechas de fila dentro de sus filas */
+.carousel-row .row-btn {
+  display: flex !important;
+  z-index: 250; /* por encima del contenido de fila pero debajo del featured */
+  pointer-events: auto;
+}
+
+/* Tamaños reducidos (ya aplicados): ajustes finos */
+.slider-btn {
+  /* ...existing reduced sizes... */
+  width: 40px;
+  height: 40px;
+  font-size: 1.4rem;
+  padding: 8px 12px;
+  border-radius: 6px;
+}
+
+.row-btn {
+  /* ...existing reduced sizes... */
+  width: 36px;
+  height: 44px;
+  font-size: 1.2rem;
+  padding: 6px 10px;
+  border-radius: 6px;
+}
+
+/* FOOTER */
+.site-footer {
+  background: rgba(0,0,0,0.85);
+  color: #cfcfcf;
+  padding: 18px 20px;
+  text-align: center;
+  font-size: 0.95rem;
+  border-top: 1px solid rgba(255,255,255,0.04);
+}
+
+.site-footer .footer-inner a {
+  color: #00aaff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.site-footer .footer-inner a:hover {
+  text-decoration: underline;
+}
+
+/* small screens: ajustar tamaño */
+@media (max-width: 600px) {
+  .site-footer { font-size: 0.85rem; padding: 14px 12px; }
 }

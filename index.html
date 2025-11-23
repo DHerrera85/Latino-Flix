@@ -6,30 +6,26 @@
   <title>LatinoSeries</title>
 
   <link rel="stylesheet" href="style.css" />
-
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
-
 <body>
   <!-- NAVBAR -->
   <header class="navbar">
     <div class="navbar-container">
       <h1 class="logo">LatinoSeries</h1>
-
       <nav class="menu">
         <ul class="menu-list" id="menu-list">
-          <li><a href="#">Destacados</a></li>
-          <li><a href="#">Dramas</a></li>
-          <li><a href="#">Comedias</a></li>
-          <li><a href="#">Remakes</a></li>
-          <li><a href="#">Crimen</a></li>
-          <li><a href="#">Sobrenatural</a></li>
-          <li><a href="#">LatinX</a></li>
-          <li><a href="#">Familia</a></li>
+          <li><a href="#galardonados">Galardonados</a></li>
+          <li><a href="#dramas">Dramas</a></li>
+          <li><a href="#comedias">Comedias</a></li>
+          <li><a href="#remakes">Remakes</a></li>
+          <li><a href="#crimen">Crimen</a></li>
+          <li><a href="#sobrenatural">Sobrenatural</a></li>
+          <li><a href="#latinx">LatinX</a></li>
+          <li><a href="#vuelta-2000">2000's</a></li>
         </ul>
       </nav>
-
       <div class="profile">
         <img src="img/profile.jpg" alt="Perfil" class="profile-picture" />
         <button class="menu-toggle" id="menu-toggle">
@@ -39,14 +35,9 @@
     </div>
   </header>
 
-  <!-- SIDEBAR -->
-  <div class="sidebar"></div>
-
   <!-- FEATURED SLIDER -->
   <div class="featured-slider-container">
     <div class="featured-slider">
-
-      <!-- Slide 1 -->
       <section class="featured-content" data-bg="img/f-5.jpg">
         <img class="featured-title" src="img/f-t-4.png" alt="La Máquina">
         <p class="featured-desc">
@@ -54,8 +45,6 @@
         </p>
         <button class="featured-button">Hulu</button>
       </section>
-
-      <!-- Slide 2 -->
       <section class="featured-content" data-bg="img/f-6.png">
         <img class="featured-title" src="img/f-t-5.png" alt="Acapulco">
         <p class="featured-desc">
@@ -63,7 +52,6 @@
         </p>
         <button class="featured-button">Apple TV</button>
       </section>
-
     </div>
 
     <!-- NAV BUTTONS -->
@@ -74,165 +62,660 @@
     <div class="slider-indicators" id="indicators"></div>
   </div>
 
-  <!-- PROYECTOS -->
+  <!-- ÚLTIMOS -->
   <section class="projects-section">
-    <h2 class="movie-list-title">OTROS PROYECTOS</h2>
-    <div class="movie-list-wrapper drag-scroll">
-      <div class="movie-list">
-
-        <div class="movie-list-item">
-          <img class="movie-list-item-img" src="img/lamaquina.jpg" alt="">
-          <span class="movie-list-item-title">La Máquina</span>
-          <p class="movie-list-item-desc">Un boxeador se enfrenta a una organización criminal</p>
-          <button class="movie-list-item-button">Hulu</button>
+    <h2 class="movie-list-title">ÚLTIMOS</h2>
+    <div class="carousel-row">
+      <button class="row-btn row-btn-prev">&#10094;</button>
+      <div class="movie-list-wrapper">
+        <div class="movie-list">
+          <div class="movie-list-item">
+            <img class="movie-list-item-img" src="img/lamaquina.jpg" alt="">
+            <span class="movie-list-item-title">La Máquina</span>
+            <p class="movie-list-item-desc">Un boxeador se enfrenta a una organización criminal</p>
+            <button class="movie-list-item-button">Hulu</button>
+          </div>
+          <div class="movie-list-item">
+            <img class="movie-list-item-img" src="img/landofwomen.jpg" alt="">
+            <span class="movie-list-item-title">Land of Women</span>
+            <p class="movie-list-item-desc">Una mujer debe huir con su madre e hija a España.</p>
+            <button class="movie-list-item-button">Apple TV</button>
+          </div>
+          <div class="movie-list-item">
+            <img class="movie-list-item-img" src="img/lopezvslopez.png" alt="">
+            <span class="movie-list-item-title">Lopez vs. Lopez</span>
+            <p class="movie-list-item-desc">George Lopez vuelve con una comedia familiar.</p>
+            <button class="movie-list-item-button">NBC</button>
+          </div>
+          <div class="movie-list-item">
+            <img class="movie-list-item-img" src="img/fantasmas.jpg" alt="">
+            <span class="movie-list-item-title">Fantasmas</span>
+            <p class="movie-list-item-desc">Historias cómicas y espeluznantes en Nueva York.</p>
+            <button class="movie-list-item-button">HBO</button>
+          </div>
+          <div class="movie-list-item">
+            <img class="movie-list-item-img" src="img/drdeath.jpg" alt="">
+            <span class="movie-list-item-title">Dr. Death</span>
+            <p class="movie-list-item-desc">El cirujano Paolo Macchiarini es investigado por una periodista</p>
+            <button class="movie-list-item-button">Peacock</button>
+          </div>
         </div>
-
-        <div class="movie-list-item">
-          <img class="movie-list-item-img" src="img/landofwomen.jpg" alt="">
-          <span class="movie-list-item-title">Land of Women</span>
-          <p class="movie-list-item-desc">Una mujer debe huir con su madre e hija a España.</p>
-          <button class="movie-list-item-button">Apple TV</button>
-        </div>
-
-        <div class="movie-list-item">
-          <img class="movie-list-item-img" src="img/lopezvslopez.png" alt="">
-          <span class="movie-list-item-title">Lopez vs. Lopez</span>
-          <p class="movie-list-item-desc">George Lopez vuelve con una comedia familiar.</p>
-          <button class="movie-list-item-button">NBC</button>
-        </div>
-
-        <div class="movie-list-item">
-          <img class="movie-list-item-img" src="img/fantasmas.jpg" alt="">
-          <span class="movie-list-item-title">Fantasmas</span>
-          <p class="movie-list-item-desc">Historias cómicas y espeluznantes en Nueva York.</p>
-          <button class="movie-list-item-button">HBO</button>
-        </div>
-
       </div>
+      <button class="row-btn row-btn-next">&#10095;</button>
     </div>
   </section>
 
-  <!-- CONTENIDO PRINCIPAL -->
-  <main class="main-content">
+<!-- GALARDONADOS -->
+<div id="galardonados" class="movie-list-container">
+  <h1 class="movie-list-title">GALARDONADOS</h1>
+  <div class="carousel-row">
+    <button class="row-btn row-btn-prev">&#10094;</button>
+    <div class="movie-list-wrapper">
 
-    <!--  -->
-    <div class="movie-list-container">
-      <h1 class="movie-list-title">GALARDONADOS</h1>
+<div class="movie-list-item">
+    <img class="movie-list-item-img" src="img/griselda.jpg" alt="">
+    <span class="movie-list-item-title">Griselda</span>
+    <p class="movie-list-item-desc">Una madre convierte su negocio en uno de los cárteles más temidos.</p>
+    <button class="movie-list-item-button">Netflix</button>
+</div>
+
+<div class="movie-list-item">
+    <img class="movie-list-item-img" src="img/narcos.jpg" alt="">
+    <span class="movie-list-item-title">Narcos</span>
+    <p class="movie-list-item-desc">Pablo Escobar enfrenta a la DEA mientras expande su imperio criminal.</p>
+    <button class="movie-list-item-button">Netflix</button>
+</div>
+
+<div class="movie-list-item">
+    <img class="movie-list-item-img" src="img/selena.jpg" alt="">
+    <span class="movie-list-item-title">Selena, the Series</span>
+    <p class="movie-list-item-desc">Selena y su familia buscan cumplir el sueño de vivir de la música.</p>
+    <button class="movie-list-item-button">Netflix</button>
+</div>
+
+<div class="movie-list-item">
+    <img class="movie-list-item-img" src="img/mozartinthejungle.png" alt="">
+    <span class="movie-list-item-title">Mozart in the Jungle</span>
+    <p class="movie-list-item-desc">Hailey ingresa a la sinfónica y trabaja con un director excéntrico.</p>
+    <button class="movie-list-item-button">Amazon</button>
+</div>
+
+<div class="movie-list-item">
+    <img class="movie-list-item-img" src="img/genius.jpg" alt="">
+    <span class="movie-list-item-title">Genius: Picasso</span>
+    <p class="movie-list-item-desc">Picasso lucha con su arte, su genio y su agitada vida personal.</p>
+    <button class="movie-list-item-button">National Geographic</button>
+</div>
+
+<div class="movie-list-item">
+    <img class="movie-list-item-img" src="img/americancrime.png" alt="">
+    <span class="movie-list-item-title">American Crime Story: Versace</span>
+    <p class="movie-list-item-desc">El asesinato de Versace revela la persecución del asesino Andrew Cunanan.</p>
+    <button class="movie-list-item-button">FX</button>
+</div>
+
+<div class="movie-list-item">
+    <img class="movie-list-item-img" src="img/onedayatatime.jpg" alt="">
+    <span class="movie-list-item-title">One Day at a Time</span>
+    <p class="movie-list-item-desc">Una mamá soltera enfrenta la vida familiar junto a su hija y madre.</p>
+    <button class="movie-list-item-button">Netflix</button>
+</div>
+    </div>
+
+    <button class="row-btn row-btn-next">&#10095;</button>
+  </div>
+</div>
+
+
+  <!-- DRAMAS -->
+  <div id="dramas" class="movie-list-container">
+    <h1 class="movie-list-title">DRAMAS</h1>
+    <div class="carousel-row">
+      <button class="row-btn row-btn-prev">&#10094;</button>
+      <div class="movie-list-wrapper">
+
+    <div class="movie-list-item">
+        <img class="movie-list-item-img" src="img/nowandthen.jpg" alt="">
+        <span class="movie-list-item-title">Now and Then</span>
+        <p class="movie-list-item-desc">Un viejo secreto reúne a seis ex amigos veinte años después.</p>
+        <button class="movie-list-item-button">Apple TV</button>
+    </div>
+
+    <div class="movie-list-item">
+        <img class="movie-list-item-img" src="img/casagrande.jpg" alt="">
+        <span class="movie-list-item-title">Casa Grande</span>
+        <p class="movie-list-item-desc">Varias familias enfrentan tensiones por trabajo, privilegios e inmigración.</p>
+        <button class="movie-list-item-button">Amazon Freevee</button>
+    </div>
+
+    <div class="movie-list-item">
+        <img class="movie-list-item-img" src="img/fantasyisland.jpg" alt="">
+        <span class="movie-list-item-title">Fantasy Island</span>
+        <p class="movie-list-item-desc">Elena Roarke cumple deseos inesperados en una isla llena de misterios.</p>
+        <button class="movie-list-item-button">FOX</button>
+    </div>
+
+    <div class="movie-list-item">
+        <img class="movie-list-item-img" src="img/bakerandbeauty.png" alt="">
+        <span class="movie-list-item-title">The Baker and the Beauty</span>
+        <p class="movie-list-item-desc">Un panadero común inicia un romance improbable con una supermodelo.</p>
+        <button class="movie-list-item-button">ABC Studios</button>
+    </div>
+
+    <div class="movie-list-item">
+        <img class="movie-list-item-img" src="img/gentefied.jpg" alt="">
+        <span class="movie-list-item-title">Gentefied</span>
+        <p class="movie-list-item-desc">Tres primos intentan salvar la tienda familiar mientras enfrentan cambios.</p>
+        <button class="movie-list-item-button">Netflix</button>
+    </div>
+
+    <div class="movie-list-item">
+        <img class="movie-list-item-img" src="img/vida.png" alt="">
+        <span class="movie-list-item-title">Vida</span>
+        <p class="movie-list-item-desc">Dos hermanas descubren secretos familiares al volver a su barrio.</p>
+        <button class="movie-list-item-button">Starz</button>
+    </div>
+
+    <div class="movie-list-item">
+        <img class="movie-list-item-img" src="img/cane.png" alt="">
+        <span class="movie-list-item-title">Cane</span>
+        <p class="movie-list-item-desc">Alex Vega enfrenta poder y traiciones al liderar el negocio familiar.</p>
+        <button class="movie-list-item-button">CBS</button>
+    </div>       
+
+      </div>
+      <button class="row-btn row-btn-next">&#10095;</button>
+    </div>
+  </div>
+
+  <!-- COMEDIAS -->
+  <div id="comedias" class="movie-list-container">
+    <h1 class="movie-list-title">COMEDIAS</h1>
+    <div class="carousel-row">
+      <button class="row-btn row-btn-prev">&#10094;</button>
       <div class="movie-list-wrapper">
         <div class="movie-list">
 
-          <div class="movie-list-item">
-            <img class="movie-list-item-img" src="img/griselda.jpg" alt="">
-            <span class="movie-list-item-title">Griselda</span>
-            <p class="movie-list-item-desc">La creadora de uno de los cárteles más rentables de la historia.</p>
-            <button class="movie-list-item-button">Netflix</button>
-          </div>
-
-          <div class="movie-list-item">
-            <img class="movie-list-item-img" src="img/narcos.jpg" alt="">
-            <span class="movie-list-item-title">Narcos</span>
-            <p class="movie-list-item-desc">Pablo Escobar se enfrenta al gobierno colombiano y a EE.UU.</p>
-            <button class="movie-list-item-button">Netflix</button>
-          </div>
-
-           <div class="movie-list-item">
-            <img class="movie-list-item-img" src="img/selena.jpg" alt="">
-            <span class="movie-list-item-title">Selena, the Series</span>
-            <p class="movie-list-item-desc">Selena y familia buscan cumplir el sueño de vivir de la música</p>
-            <button class="movie-list-item-button">Netflix</button>
-          </div>
-          
-          <div class="movie-list-item">
-            <img class="movie-list-item-img" src="img/mozartinthejungle.png" alt="">
-            <span class="movie-list-item-title">Mozart in the Jungle</span>
-            <p class="movie-list-item-desc">Hailey conoce a Gustavo, un excéntrico director de orquesta</p>
-            <button class="movie-list-item-button">Amazon</button>
-          </div>
-
-          <div class="movie-list-item">
-            <img class="movie-list-item-img" src="img/genius.jpg" alt="">
-            <span class="movie-list-item-title">Genius: Picasso</span>
-            <p class="movie-list-item-desc">La vida del genio español, ambientado en 1930</p>
-            <button class="movie-list-item-button">National Geographic</button>
-          </div>
-
-          <div class="movie-list-item">
-            <img class="movie-list-item-img" src="img/americancrime.png" alt="">
-            <span class="movie-list-item-title">American Crime Story: Versace</span>
-            <p class="movie-list-item-desc">El crimen de Versace desenmascaró a un asesino en serie</p>
-            <button class="movie-list-item-button">FX</button>
-          </div>
-
-          <div class="movie-list-item">
-            <img class="movie-list-item-img" src="img/onedayatatime.jpg" alt="">
-            <span class="movie-list-item-title">One Day at a Time</span>
-            <p class="movie-list-item-desc">Una mamá soltera lleva adelante un hogar lleno de hormonas revueltas</p>
-            <button class="movie-list-item-button">Netflix</button>
-          </div>
-
-        </div>
-      </div>
+    <div class="movie-list-item">
+        <img class="movie-list-item-img" src="img/lopezvslopez.png" alt="">
+        <span class="movie-list-item-title">Lopez vs. Lopez</span>
+        <p class="movie-list-item-desc">Un padre e hija reconstruyen su relación con humor familiar.</p>
+        <button class="movie-list-item-button">NBC</button>
     </div>
 
-    <div class="movie-list-container">
-      <h1 class="movie-list-title">DRAMAS</h1>
+    <div class="movie-list-item">
+        <img class="movie-list-item-img" src="img/notdeadyet.jpg" alt="">
+        <span class="movie-list-item-title">Not Dead Yet</span>
+        <p class="movie-list-item-desc">Una periodista recibe consejos de vida de espíritus divertidos.</p>
+        <button class="movie-list-item-button">ABC Studios</button>
+    </div>
+
+    <div class="movie-list-item">
+        <img class="movie-list-item-img" src="img/acapulco.jpg" alt="">
+        <span class="movie-list-item-title">Acapulco</span>
+        <p class="movie-list-item-desc">Máximo trabaja en un lujoso resort y enfrenta caóticos desafíos.</p>
+        <button class="movie-list-item-button">Apple TV</button>
+    </div>
+
+    <div class="movie-list-item">
+        <img class="movie-list-item-img" src="img/thisfool.jpg" alt="">
+        <span class="movie-list-item-title">This Fool</span>
+        <p class="movie-list-item-desc">Julio intenta mejorar su vida mientras lidia con su familia.</p>
+        <button class="movie-list-item-button">Hulu</button>
+    </div>
+
+    <div class="movie-list-item">
+        <img class="movie-list-item-img" src="img/withlove.jpg" alt="">
+        <span class="movie-list-item-title">With Love</span>
+        <p class="movie-list-item-desc">Los hermanos Díaz buscan amor, equilibrio y nuevos comienzos.</p>
+        <button class="movie-list-item-button">Amazon Prime Video</button>
+    </div>
+
+    <div class="movie-list-item">
+        <img class="movie-list-item-img" src="img/losgarcia.jpg" alt="">
+        <span class="movie-list-item-title">Los Garcia</span>
+        <p class="movie-list-item-desc">Los hermanos García regresan ahora como padres con nuevas historias.</p>
+        <button class="movie-list-item-button">HBO Max</button>
+    </div>
+
+    <div class="movie-list-item">
+        <img class="movie-list-item-img" src="img/superstore.png" alt="">
+        <span class="movie-list-item-title">Superstore</span>
+        <p class="movie-list-item-desc">Empleados desastrosos sobreviven al caos diario de un megastore.</p>
+        <button class="movie-list-item-button">NBC</button>
+    </div>
+
+    <div class="movie-list-item">
+        <img class="movie-list-item-img" src="img/telenovela.png" alt="">
+        <span class="movie-list-item-title">Telenovela</span>
+        <p class="movie-list-item-desc">El caos detrás de cámaras supera al drama de la telenovela.</p>
+        <button class="movie-list-item-button">FOX</button>
+    </div>
+        </div>
+      </div>
+      <button class="row-btn row-btn-next">&#10095;</button>
+    </div>
+  </div>
+
+  <!-- REMAKES -->
+  <div id="remakes" class="movie-list-container">
+    <h1 class="movie-list-title">REMAKES</h1>
+    <div class="carousel-row">
+      <button class="row-btn row-btn-prev">&#10094;</button>
       <div class="movie-list-wrapper">
         <div class="movie-list">
 
-          <div class="movie-list-item">
-            <img class="movie-list-item-img" src="img/nowandthen.jpg" alt="">
-            <span class="movie-list-item-title">Now and Then</span>
-            <p class="movie-list-item-desc">Un secreto acecha a seis ex amigos de la Universidad veinte años después</p>
-            <button class="movie-list-item-button">Apple TV</button>
-          </div>
-
-          <div class="movie-list-item">
-            <img class="movie-list-item-img" src="img/casagrande.jpg" alt="">
-            <span class="movie-list-item-title">Casa Grande</span>
-            <p class="movie-list-item-desc">Familias enfrentadas por la realidad de la inmigración en EE.UU.</p>
-            <button class="movie-list-item-button">Amazon Freevee</button>
-          </div>
-
-           <div class="movie-list-item">
-            <img class="movie-list-item-img" src="img/fantasyisland.jpg" alt="">
-            <span class="movie-list-item-title">Fantasy Island</span>
-            <p class="movie-list-item-desc">Elena Roarke es la nueva administradora de la misteriosa isla</p>
-            <button class="movie-list-item-button">FOX</button>
-          </div>
-          
-          <div class="movie-list-item">
-            <img class="movie-list-item-img" src="img/bakerandbeauty.png" alt="">
-            <span class="movie-list-item-title">The Baker and the Beauty</span>
-            <p class="movie-list-item-desc">Un panadero se enamora de una supermodelo</p>
-            <button class="movie-list-item-button">ABC Studios</button>
-          </div>
-
-          <div class="movie-list-item">
-            <img class="movie-list-item-img" src="img/gentefied.jpg" alt="">
-            <span class="movie-list-item-title">Gentefied</span>
-            <p class="movie-list-item-desc">Tres primos trabajan en la tienda de su abuelo</p>
-            <button class="movie-list-item-button">Netflix</button>
-          </div>
-
-          <div class="movie-list-item">
-            <img class="movie-list-item-img" src="img/vida.png" alt="">
-            <span class="movie-list-item-title">Vida</span>
-            <p class="movie-list-item-desc">Emma y Lyn descubren secretos de su madre</p>
-            <button class="movie-list-item-button">Starz</button>
-          </div>
-
-          <div class="movie-list-item">
-            <img class="movie-list-item-img" src="img/cane.png" alt="">
-            <span class="movie-list-item-title">Cane</span>
-            <p class="movie-list-item-desc">Alex Vega asume el control de los negocios de su familia</p>
-            <button class="movie-list-item-button">CBS</button>
-          </div>
-        </div>
-      </div>
+    <div class="movie-list-item">
+        <img class="movie-list-item-img" src="img/broke.jpg" alt="">
+        <span class="movie-list-item-title">Broke</span>
+        <p class="movie
+        <button class="movie-list-item-button">CBS</button>
     </div>
 
-  </main>
+    <div class="movie-list-item">
+        <img class="movie-list-item-img" src="img/grandhotel.png" alt="">
+        <span class="movie-list-item-title">Grand Hotel</span>
+        <p class="movie-list-item-desc">Un crimen revela secretos ocultos en un lujoso hotel de Miami.</p>
+        <button class="movie-list-item-button">ABC Studios</button>
+    </div>
+
+    <div class="movie-list-item">
+        <img class="movie-list-item-img" src="img/queenofthesouth.png" alt="">
+        <span class="movie-list-item-title">Queen of the South</span>
+        <p class="movie-list-item-desc">Teresa huye de un cártel y usa su ingenio para sobrevivir.</p>
+        <button class="movie-list-item-button">USA Network</button>
+    </div>
+
+    <div class="movie-list-item">
+        <img class="movie-list-item-img" src="img/deviousmaids.png" alt="">
+        <span class="movie-list-item-title">Devious Maids</span>
+        <p class="movie-list-item-desc">Cuatro empleadas latinas buscan ascender entre los ricos de Beverly Hills.</p>
+        <button class="movie-list-item-button">Lifetime</button>
+    </div>
+
+    <div class="movie-list-item">
+        <img class="movie-list-item-img" src="img/janethevirgin.png" alt="">
+        <span class="movie-list-item-title">Jane The Virgin</span>
+        <p class="movie-list-item-desc">Una joven descubre que fue inseminada accidentalmente en un control médico.</p>
+        <button class="movie-list-item-button">The CW</button>
+    </div>
+
+    <div class="movie-list-item">
+        <img class="movie-list-item-img" src="img/uglybetty.jpg" alt="">
+        <span class="movie-list-item-title">Ugly Betty</span>
+        <p class="movie-list-item-desc">Betty desafía prejuicios y triunfa en una revista de moda competitiva.</p>
+        <button class="movie-list-item-button">ABC Studios</button>
+    </div>
+
+        </div>
+      </div>
+      <button class="row-btn row-btn-next">&#10095;</button>
+    </div>
+  </div>
+
+  <!-- CRIMEN -->
+  <div id="crimen" class="movie-list-container">
+    <h1 class="movie-list-title">CRIMEN</h1>
+    <div class="carousel-row">
+      <button class="row-btn row-btn-prev">&#10094;</button>
+      <div class="movie-list-wrapper">
+        <div class="movie-list">
+
+<div class="movie-list-item">
+    <img class="movie-list-item-img" src="img/floridaman.jpg" alt="">
+    <span class="movie-list-item-title">Florida Man</span>
+    <p class="movie-list-item-desc">Un expolicía debe hallar a la novia de un mafioso en fuga.</p>
+    <button class="movie-list-item-button">Netflix</button>
+</div>
+
+<div class="movie-list-item">
+    <img class="movie-list-item-img" src="img/magnumpi.png" alt="">
+    <span class="movie-list-item-title">Magnum P.I.</span>
+    <p class="movie-list-item-desc">Un ex SEAL se convierte en investigador privado en Hawái.</p>
+    <button class="movie-list-item-button">NBC</button>
+</div>
+
+<div class="movie-list-item">
+    <img class="movie-list-item-img" src="img/lasfinest.jpg" alt="">
+    <span class="movie-list-item-title">L.A.'s Finest</span>
+    <p class="movie-list-item-desc">Dos detectives enfrentan casos peligrosos mientras lidian con su pasado.</p>
+    <button class="movie-list-item-button">Spectrum</button>
+</div>
+
+<div class="movie-list-item">
+    <img class="movie-list-item-img" src="img/mayansmc.png" alt="">
+    <span class="movie-list-item-title">Mayans M.C.</span>
+    <p class="movie-list-item-desc">EZ Reyes lucha por sobrevivir en la violencia del cártel.</p>
+    <button class="movie-list-item-button">FX</button>
+</div>
+
+<div class="movie-list-item">
+    <img class="movie-list-item-img" src="img/shadesofblue.png" alt="">
+    <span class="movie-list-item-title">Shades of Blue</span>
+    <p class="movie-list-item-desc">Una policía corrupta es obligada a colaborar con el FBI.</p>
+    <button class="movie-list-item-button">NBC</button>
+  </div>
+
+  <div class="movie-list-item">
+    <img class="movie-list-item-img" src="img/thebridge.jpg" alt="">
+    <span class="movie-list-item-title">The Bridge</span>
+    <p class="movie-list-item-desc">Dos detectives cazan a un asesino que opera entre dos fronteras.</p>
+    <button class="movie-list-item-button">FX</button>
+  </div>
+
+  <div class="movie-list-item">
+    <img class="movie-list-item-img" src="img/matador.jpg" alt="">
+    <span class="movie-list-item-title">Matador</span>
+    <p class="movie-list-item-desc">Un futbolista famoso lleva una doble vida como agente de la CIA.</p>
+    <button class="movie-list-item-button">El Rey Network</button>
+  </div>
+
+  <div class="movie-list-item">
+    <img class="movie-list-item-img" src="img/magnumpi.png" alt="">
+    <span class="movie-list-item-title">Magnum P.I.</span>
+    <p class="movie-list-item-desc">Un ex SEAL se convierte en investigador privado en Hawái.</p>
+    <button class="movie-list-item-button">NBC</button>
+  </div>
+
+        </div>
+      </div>
+      <button class="row-btn row-btn-next">&#10095;</button>
+    </div>
+  </div>
+
+  <!-- SOBRENATURAL -->
+  <div id="sobrenatural" class="movie-list-container">
+    <h1 class="movie-list-title">SOBRENATURAL</h1>
+    <div class="carousel-row">
+      <button class="row-btn row-btn-prev">&#10094;</button>
+      <div class="movie-list-wrapper">
+        <div class="movie-list">
+
+<div class="movie-list-item">
+    <img class="movie-list-item-img" src="img/thehorrorofdoloresroach.jpg" alt="">
+    <span class="movie-list-item-title">The Horror of Dolores Roach</span>
+    <p class="movie-list-item-desc">Dolores inicia una nueva vida que la lleva a extremos oscuros.</p>
+    <button class="movie-list-item-button">Prime Video</button>
+</div>
+
+<div class="movie-list-item">
+    <img class="movie-list-item-img" src="img/lettherightonein.jpg" alt="">
+    <span class="movie-list-item-title">Let the Right One In</span>
+    <p class="movie-list-item-desc">Un padre protege a su hija vampiro mientras lucha por su humanidad.</p>
+    <button class="movie-list-item-button">Showtime</button>
+</div>
+
+<div class="movie-list-item">
+    <img class="movie-list-item-img" src="img/wednesday.jpg" alt="">
+    <span class="movie-list-item-title">Wednesday</span>
+    <p class="movie-list-item-desc">Miércoles investiga asesinatos sobrenaturales en la Academia Nunca Más.</p>
+    <button class="movie-list-item-button">Netflix</button>
+</div>
+
+<div class="movie-list-item">
+    <img class="movie-list-item-img" src="img/losespookys.jpg" alt="">
+    <span class="movie-list-item-title">Los Espookys</span>
+    <p class="movie-list-item-desc">Un grupo crea escenarios terroríficos para clientes que buscan sustos.</p>
+    <button class="movie-list-item-button">HBO</button>
+</div>
+
+<div class="movie-list-item">
+    <img class="movie-list-item-img" src="img/charmed.jpg" alt="">
+    <span class="movie-list-item-title">Charmed</span>
+    <p class="movie-list-item-desc">Tres hermanas descubren que son poderosas brujas destinadas a luchar.</p>
+    <button class="movie-list-item-button">The CW</button>
+</div>
+
+<div class="movie-list-item">
+    <img class="movie-list-item-img" src="img/fromdusktilldawn.png" alt="">
+    <span class="movie-list-item-title">From Dusk Till Dawn</span>
+    <p class="movie-list-item-desc">Dos fugitivos terminan atrapados en un club infestado de vampiros.</p>
+    <button class="movie-list-item-button">El Rey Network</button>
+</div>
+        
+        </div>
+      </div>
+      <button class="row-btn row-btn-next">&#10095;</button>
+    </div>
+  </div>
+
+  <!-- LATINX GENERATION -->
+  <div id="latinx" class="movie-list-container">
+    <h1 class="movie-list-title">LATINX GENERATION</h1>
+    <div class="carousel-row">
+      <button class="row-btn row-btn-prev">&#10094;</button>
+      <div class="movie-list-wrapper">
+        <div class="movie-list">
+<div class="movie-list-item">
+    <img class="movie-list-item-img" src="img/primo.jpg" alt="">
+    <span class="movie-list-item-title">Primo</span>
+    <p class="movie-list-item-desc">Un adolescente lidia con la vida entre su madre y sus cinco tíos.</p>
+    <button class="movie-list-item-button">Amazon Freevee</button>
+</div>
+
+<div class="movie-list-item">
+    <img class="movie-list-item-img" src="img/freeridge.jpg" alt="">
+    <span class="movie-list-item-title">Freeridge</span>
+    <p class="movie-list-item-desc">Cuatro amigos intentan romper una maldición que altera sus vidas.</p>
+    <button class="movie-list-item-button">Netflix</button>
+</div>
+
+<div class="movie-list-item">
+    <img class="movie-list-item-img" src="img/stepuphighwater.jpg" alt="">
+    <span class="movie-list-item-title">Step Up: High Water</span>
+    <p class="movie-list-item-desc">Los hermanos Tal y Janelle buscan nuevas oportunidades en Atlanta.</p>
+    <button class="movie-list-item-button">Starz</button>
+</div>
+
+<div class="movie-list-item">
+    <img class="movie-list-item-img" src="img/lovevictor.png" alt="">
+    <span class="movie-list-item-title">Love, Victor</span>
+    <p class="movie-list-item-desc">Victor enfrenta cambios, amistades y el descubrimiento personal.</p>
+    <button class="movie-list-item-button">Hulu</button>
+</div>
+
+<div class="movie-list-item">
+    <img class="movie-list-item-img" src="img/partyoffive.png" alt="">
+    <span class="movie-list-item-title">Party of Five</span>
+    <p class="movie-list-item-desc">Los hermanos Acosta luchan por seguir adelante tras la deportación.</p>
+    <button class="movie-list-item-button">Freeform</button>
+</div>
+
+<div class="movie-list-item">
+    <img class="movie-list-item-img" src="img/eastloshigh.png" alt="">
+    <span class="movie-list-item-title">East Los High</span>
+    <p class="movie-list-item-desc">Baile, romance y drama definen la vida en una escuela del Este de L.A.</p>
+    <button class="movie-list-item-button">Hulu</button>
+</div>
+        </div>
+      </div>
+      <button class="row-btn row-btn-next">&#10095;</button>
+    </div>
+  </div>
+
+  <!-- OTROS -->
+  <div class="movie-list-container">
+    <h1 class="movie-list-title">OTROS</h1>
+    <div class="carousel-row">
+      <button class="row-btn row-btn-prev">&#10094;</button>
+      <div class="movie-list-wrapper">
+        <div class="movie-list">
+
+<div class="movie-list-item">
+    <img class="movie-list-item-img" src="img/headoftheclass.jpg" alt="">
+    <span class="movie-list-item-title">Head of the Class</span>
+    <p class="movie-list-item-desc">La maestra Alicia Adams quiere que sus estudiantes vivan más allá de las calificaciones.</p>
+    <button class="movie-list-item-button">HBO Max</button>
+</div>
+
+<div class="movie-list-item">
+    <img class="movie-list-item-img" src="img/penny dreadful.jpg" alt="">
+    <span class="movie-list-item-title">Penny Dreadful: City of Angels</span>
+    <p class="movie-list-item-desc">En 1938, Los Ángeles es escenario de un conflicto entre la Santa Muerte y el Diablo.</p>
+    <button class="movie-list-item-button">Showtime</button>
+</div>
+
+<div class="movie-list-item">
+    <img class="movie-list-item-img" src="img/theexorcist.jpg" alt="">
+    <span class="movie-list-item-title">The Exorcist</span>
+    <p class="movie-list-item-desc">Una madre pide ayuda al Padre Tomás Herrera al notar presencias extrañas en su hogar.</p>
+    <button class="movie-list-item-button">FOX</button>
+</div>
+
+<div class="movie-list-item">
+    <img class="movie-list-item-img" src="img/onmyblock.jpg" alt="">
+    <span class="movie-list-item-title">On My Block</span>
+    <p class="movie-list-item-desc">Cuatro amigos de barrio enfrentan la vida en una escuela del centro de la ciudad.</p>
+    <button class="movie-list-item-button">Netflix</button>
+</div>
+
+<div class="movie-list-item">
+    <img class="movie-list-item-img" src="img/cristela.jpg" alt="">
+    <span class="movie-list-item-title">Cristela</span>
+    <p class="movie-list-item-desc">Cristela enfrenta la desaprobación familiar por su nuevo trabajo en una firma de negocios.</p>
+    <button class="movie-list-item-button">ABC Studios</button>
+</div>
+
+<div class="movie-list-item">
+    <img class="movie-list-item-img" src="img/underemployed.jpg" alt="">
+    <span class="movie-list-item-title">Underemployed</span>
+    <p class="movie-list-item-desc">Cinco amigos lidian con las realidades de la vida después de la universidad.</p>
+    <button class="movie-list-item-button">MTV</button>
+</div>
+
+<div class="movie-list-item">
+    <img class="movie-list-item-img" src="img/rob.jpg" alt="">
+    <span class="movie-list-item-title">Rob</span>
+    <p class="movie-list-item-desc">Rob, un hombre solitario, se casa con una familia mexicoamericana.</p>
+    <button class="movie-list-item-button">Fox</button>
+</div>
+        </div>
+      </div>
+      <button class="row-btn row-btn-next">&#10095;</button>
+    </div>
+  </div>
+
+  <!-- NUEVAS VERSIONES DE ÉXITOS LATINOAMERICANOS -->
+  <div class="movie-list-container">
+    <h1 class="movie-list-title">NUEVAS VERSIONES DE ÉXITOS LATINOAMERICANOS</h1>
+    <div class="carousel-row">
+      <button class="row-btn row-btn-prev">&#10094;</button>
+      <div class="movie-list-wrapper">
+        <div class="movie-list">
+<div class="movie-list-item">
+    <img class="movie-list-item-img" src="img/thecleaninglady.jpg" alt="">
+    <span class="movie-list-item-title">The Cleaning Lady</span>
+    <p class="movie-list-item-desc">Thony limpia crímenes para salvar a su hijo enfermo.</p>
+    <button class="movie-list-item-button">FOX</button>
+</div>
+
+<div class="movie-list-item">
+    <img class="movie-list-item-img" src="img/themisteriesoflaura.jpg" alt="">
+    <span class="movie-list-item-title">The Mysteries of Laura</span>
+    <p class="movie-list-item-desc">Laura es policía, dura, pero también un desastre personal.</p>
+    <button class="movie-list-item-button">NBC</button>
+</div>
+
+<div class="movie-list-item">
+    <img class="movie-list-item-img" src="img/notomorrow.jpg" alt="">
+    <span class="movie-list-item-title">No Tomorrow</span>
+    <p class="movie-list-item-desc">Evie vive al máximo con un hombre que cree que el fin del mundo está cerca.</p>
+    <button class="movie-list-item-button">The CW</button>
+</div>
+
+<div class="movie-list-item">
+    <img class="movie-list-item-img" src="img/hollywoodheights.jpg" alt="">
+    <span class="movie-list-item-title">Hollywood Heights</span>
+    <p class="movie-list-item-desc">Loren compone para su ídolo Eddie Duran.</p>
+    <button class="movie-list-item-button">Nickelodeon</button>
+</div>
+
+<div class="movie-list-item">
+    <img class="movie-list-item-img" src="img/chasinglife.jpg" alt="">
+    <span class="movie-list-item-title">Chasing Life</span>
+    <p class="movie-list-item-desc">Una joven enfrenta su vida tras ser diagnosticada con una enfermedad terminal.</p>
+    <button class="movie-list-item-button">ABC Family</button>
+</div>
+
+<div class="movie-list-item">
+    <img class="movie-list-item-img" src="img/killerwomen.jpg" alt="">
+    <span class="movie-list-item-title">Killer Women</span>
+    <p class="movie-list-item-desc">Molly Parker es la única mujer en los Texas Rangers y hace cumplir la ley a su manera.</p>
+    <button class="movie-list-item-button">ABC Studios</button>
+</div>
+        </div>
+      </div>
+      <button class="row-btn row-btn-next">&#10095;</button>
+    </div>
+  </div>
+
+  <!-- DE VUELTA A LOS 2000 -->
+  <div id="vuelta-2000" class="movie-list-container">
+    <h1 class="movie-list-title">DE VUELTA A LOS 2000</h1>
+    <div class="carousel-row">
+      <button class="row-btn row-btn-prev">&#10094;</button>
+      <div class="movie-list-wrapper">
+        <div class="movie-list">
+<div class="movie-list-item">
+    <img class="movie-list-item-img" src="img/georgelopezshow.jpg" alt="">
+    <span class="movie-list-item-title">George Lopez Show</span>
+    <p class="movie-list-item-desc">George Lopez lidia con su excéntrica familia mientras trabaja como gerente en una fábrica.</p>
+    <button class="movie-list-item-button">ABC Studios</button>
+</div>
+
+<div class="movie-list-item">
+    <img class="movie-list-item-img" src="img/greetings from tucson.jpg" alt="">
+    <span class="movie-list-item-title">Greetings from Tucson</span>
+    <p class="movie-list-item-desc">David Tiant enfrenta los retos de crecer en una familia étnicamente mixta.</p>
+    <button class="movie-list-item-button">The WB</button>
+</div>
+
+<div class="movie-list-item">
+    <img class="movie-list-item-img" src="img/darkangel.jpg" alt="">
+    <span class="movie-list-item-title">Dark Angel</span>
+    <p class="movie-list-item-desc">Max, un prototipo humano alterado genéticamente, se convierte en un soldado de combate.</p>
+    <button class="movie-list-item-button">Fox</button>
+</div>
+
+<div class="movie-list-item">
+    <img class="movie-list-item-img" src="img/freddie02.jpg" alt="">
+    <span class="movie-list-item-title">Freddie</span>
+    <p class="movie-list-item-desc">Freddie vive con su cuñada, hermana y abuela, lidiando con sus diferencias.</p>
+    <button class="movie-list-item-button">NBC</button>
+</div>
+
+<div class="movie-list-item">
+    <img class="movie-list-item-img" src="img/wizardsofwaverly.jpg" alt="">
+    <span class="movie-list-item-title">Wizards of Waverly Place</span>
+    <p class="movie-list-item-desc">La familia Russo proviene de una antigua línea de magos.</p>
+    <button class="movie-list-item-button">Disney Channel</button>
+</div>
+
+<div class="movie-list-item">
+    <img class="movie-list-item-img" src="img/resurrectionblv.jpg" alt="">
+    <span class="movie-list-item-title">Resurrection Blvd</span>
+    <p class="movie-list-item-desc">Los Santiago son una familia del este de Los Ángeles, ligados al mundo del boxeo.</p>
+    <button class="movie-list-item-button">Showtime</button>
+</div>
+        </div>
+      </div>
+      <button class="row-btn row-btn-next">&#10095;</button>
+    </div>
+  </div>
 
   <script src="app.js"></script>
+
+  <!-- Añadir footer aquí -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p>LatinoSeries © <span id="year"></span>. Todos los derechos reservados.</p>
+      <p><a href="#">Términos</a> · <a href="#">Privacidad</a> · <a href="#">Contacto</a></p>
+    </div>
+  </footer>
+
+  <script>
+    // actualiza año automáticamente
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
